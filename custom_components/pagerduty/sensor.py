@@ -115,6 +115,7 @@ def calculate_assigned_incidents_attributes(data, user_id):
                     "title": incident.get("title", "Unknown"),
                     "description": incident.get("description", "Unknown"),
                     "status": incident.get("status", "Unknown"),
+                    "urgency": incident.get("urgency", "Unknown"),
                 }
                 assigned_incidents.append(incident_to_add)
     return {"assigned_incidents": assigned_incidents}
